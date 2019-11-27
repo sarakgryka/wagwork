@@ -6,9 +6,7 @@ module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
 
-    
-    console.log(dbPet);
-    db.Example.findAll({}).then(function(dbPets) {
+    db.Pet.findAll({}).then(function(dbPets) {
       res.render("index", {
         msg: "Welcome!",
         pets: dbPets
@@ -29,4 +27,6 @@ module.exports = function(app) {
   app.get("*", function(req, res) {
     res.render("404");
   });
+
+
 };

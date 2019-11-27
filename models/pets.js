@@ -2,12 +2,26 @@
 
 module.exports = function(sequelize, DataTypes) {
   var Pet= sequelize.define("Pet", {
-    jobTitle: DataTypes.STRING,
-    salary: DataTypes.INTEGER,
-    serviceQualification: DataTypes.BOOLEAN,
-    animalType: DataTypes.STRING,
-    location: DataTypes.STRING, 
-    description: DataTypes.TEXT
+    jobTitle: {
+      type:DataTypes.STRING
+    },
+    salary: {
+      type:DataTypes.INTEGER
+    },
+
+    serviceQualification: {
+      type:DataTypes.BOOLEAN
+    },
+    location: {
+      type:DataTypes.STRING
+    }, 
+    description:{
+      type: DataTypes.TEXT
+    },
   });
   return Pet;
+
+
+
 };
+
