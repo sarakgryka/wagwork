@@ -1,3 +1,18 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+.jumbotron{
+  background-image: url("../images/homepagehero.jpg");
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+
+
