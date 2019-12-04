@@ -1,18 +1,61 @@
-.list-group-item {
-  line-height: 2.5;
-}
-
-.jumbotron{
-  background-image: url("../images/homepagehero.jpg");
+.jumbotron {
   color: white;
+  background-image: url("../images/homepage-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   overflow-x: hidden;
 }
 
 
+.footer ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:16px;
+  margin-bottom:0;
+  color: white;
+}
 
+.copyright {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:14px;
+  margin-bottom:0;
+}
+
+.navbar-nav{
+  margin-right: 40px;
+  
+}
+
+.navbar-brand {
+  margin-left: 40px;
+}
+
+.footer-brand {
+  margin-left: 40px;
+  margin-top: 70px;
+}
+
+.footer {
+  background-color: #F06543;
+  height: 230px;
+}
+
+.nav-link{
+  color: #F06543 !important;
+}
+
+.footer-link{
+  color: white !important;
+}
+
+.navbar {
+  border-top: 5px #F06543;
+  border-bottom: 5px #F06543;
+
+}
