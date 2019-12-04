@@ -1,11 +1,4 @@
-"use strict";
 
-var fs = require("fs");
-var path = require("path")
-var Sequalize = require("sequalize");
-var basename = path.basename(module.filename);
-var env = process.env.Node_ENV || "development";
-var config = require(_)
 
 // // Get references to page elements
 // var $exampleText = $("#example-text");
