@@ -41,24 +41,24 @@ module.exports = function (passport) {
         )
     );
 
-passport.use(
-    "local-login",
-    new localStrategy(
-        {
-            usernameField: "email",
-            passwordField: "password"
-        },
-        function(email, password, cb){
-            db.user.findOne({where: {email: email}}).then(function(data){
-                if(!data){
-                    return cb(null, false, {message: "No Email Found!"});
-                }
-                if (!db.user.validPassword(password))
-            })
-        }
-    )
-)
-
-
-
+    passport.use(
+        "local-login",
+        new localStrategy(
+            {
+                usernameField: "email",
+                passwordField: "password"
+            },
+            function (email, password, cb) {
+                db.user.findOne({ where: { email: email } }).then(function (data) {
+                    if (!data) {
+                        return cb(null, false, { message: "No Email Found!" });
+                    }
+                    if (!db.user.validPassword(password, data.password)) {
+                        return cb(null, false, { message: "Wrong Password" });
+                    }
+                    return cb(null, data);
+                });
+            }
+        )
+    );
 };

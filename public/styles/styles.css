@@ -1,17 +1,42 @@
 h1 {
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 800;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  font-size: 52px !important;
+  color: #112542;
+}
+
+h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  font-size: 32px !important;
+  color: #112542;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px !important;
+    color: #4A4A4A;
+
+}
+
+.lead {
+  /* font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px !important;
+  color: #ffffff; */
 }
 
 .jumbotron {
   color: white;
   background-image: url("../images/homepage-hero.jpg");
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   background-attachment: fixed;
   overflow-x: hidden;
+  background-size: 100%;
 }
 
 
@@ -53,18 +78,50 @@ h1 {
 
 .nav-link{
   color: #F06543 !important;
+  text-transform: uppercase;
+  font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px !important;
+  
 }
 
 .footer-link{
   color: white !important;
+  text-transform: uppercase;
+  font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px !important;
 }
 
-.navbar {
-  border-top: 5px #F06543;
-  border-bottom: 5px #F06543;
+nav {
+  border-bottom: 3px solid #F06543;
 
 }
 
 .section {
   height: 600px;
+  padding-top: 100px;
+}
+
+.card {
+  border: none !important;
+}
+
+.full-width {
+  height: 530px;
+
+}
+
+.btn-primary{
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-weight: 800 !important;
+  background-color: #fff !important;
+  border: 2px solid #F06543 !important;
+  color: #112542 !important;
+  width: 150px;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+.btn-primary:hover{
+  background-color: #F06543 !important;
+  color: #fff !important;
 }
