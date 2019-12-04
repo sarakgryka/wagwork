@@ -1,32 +1,52 @@
 var db = require("../models");
+const passport = require("passport");
+const express = require("express");
+const router = express.Router();
 
 
 // dbPets and dbPet still need to be defined//
-module.exports = function(app) {
-  // Load index page
-  app.get("/", function(req, res) {
 
-    db.Pet.findAll({}).then(function(dbPets) {
-      res.render("index", {
-        msg: "Welcome!",
-        pets: dbPets
-      });
+// Load index page
+module.exports = function (app) {
+  app.get("/", function (req, res) {
+
+
+    res.render("index", {
+      msg: "Welcome!",
+
     });
+
   });
 
   // Load example page and pass in an example by id
-  app.get("/pets/:id", function(req, res) {
-    db.Pet.findOne({ where: { id: req.params.id } }).then(function(dbPet) {
-      res.render("pets", {
-       pet: dbPet
-      });
+  app.get("/login", function (req, res) {
+    res.render("login", {
+
+
     });
   });
 
-  // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
+  // // Render 404 page for any unmatched route
+
+  app.get("/joblistings", function (req, res) {
+
+    res.render("joblisting", {
+
+
+    })
+  })
+
+
+  app.get("/postjob", function (req, res) {
+    res.render("postjob", {
+
+
+    })
+
+  })
+
+  app.get("*", function (req, res) {
     res.render("404");
   });
+}
 
-
-};

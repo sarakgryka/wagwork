@@ -1,4 +1,7 @@
 var db = require("../models");
+const passport = require("passport");
+const express = require("express");
+const router = express.Router();
 
 module.exports = function(app) {
   // Get all examples
@@ -10,7 +13,8 @@ module.exports = function(app) {
 
   // Create a new example
   app.post("/api/pets", function(req, res) {
-    db.Pet.create(req.body).then(function(dbPets) {
+    db.Pet.create(req.body).then(function(dbPet) {
+      
       res.json(dbPet);
     });
   });

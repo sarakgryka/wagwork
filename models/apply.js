@@ -1,6 +1,6 @@
 //table where applicants info will be stored 
 module.exports = function (sequelize, DataTypes) {
-  var PetApp = sequelize.define("Pet",
+  var PetApp = sequelize.define("PetApp",
     {
       name: {
         type: DataTypes.STRING
