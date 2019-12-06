@@ -1,12 +1,235 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
 <body>
-    <h1>joblisting</h1>
+
+
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="/images/logo-white.png" height="60" alt="" id="logo">
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/joblistings">Job Board</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/postjob">Post a Job</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- END NAVIGATION BAR -->
+
+    <!-- HERO -->
+
+    <div class="jumbotron jumbotron-fluid" id="joblistinghero">
+        <div class="container">
+            <div class="col-md-4">
+                <h1 class="display-4">h1 Job Listings</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- END HERO -->
+
+    <br>
+
+
+
+
+
+    <div class="header row pb-5 pt-3">
+
+        <div class="col-sm-1"></div>
+        <form class="col-sm-11">
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control search-jobs" placeholder="Search jobs" id="searchJobs">
+                </div>
+
+                <div class="col">
+                    <a href="#" class="btn btn-primary" id="searchButton">Search for a Job</a>
+                </div>
+            </div>
+        </form>
+
+
+
+
+        <br><br><br>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row pt-2">
+            <div class="col-md-4">
+
+                <!-- FILTERS -->
+
+                <div class="filters">
+                    <h3> Filter By </h3>
+
+                    <br>
+
+                    <h4> Pet Qualifications </h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="registeredService">
+                        <label class="form-check-label" for="registeredService">
+                            Registered Service Animal
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="nonregisteredService">
+                        <label class="form-check-label" for="nonregisteredService">
+                            Non-Registered Service Animal
+                        </label>
+                    </div>
+
+                    <br>
+
+                    <h4>Within</h4>
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>5 miles</option>
+                        <option value="1">10 miles</option>
+                        <option value="2">25 miles</option>
+                        <option value="3">50 miles</option>
+                    </select>
+                    <!-- END FILTERS -->
+
+                </div>
+
+
+            </div>
+
+            <div class="col-md-1"></div>
+
+            <div class="col-md-7">
+
+                <!-- JOB LISTINGS -->
+
+                <div class="card jobcard">
+                    <div class="card-body">
+                        <h5 class="card-title">Job Title</h5>
+                        <p class="card-text">Job description - Nullam tempor leo nec libero posuere accumsan vitae sed
+                            nibh. Quisque rhoncus, elit sit amet eleifend scelerisque, eros ante laoreet felis, vitae
+                            pharetra velit quam eu quam. Sed pulvinar eleifend hendrerit. </p>
+                            <h4>Salary Information: $$$</h4>
+                        <a href="#" class="btn btn-link" id="apply">Apply for this Job</a>
+                    </div>
+                </div>
+
+
+
+                <div class="card jobcard">
+                    <div class="card-body">
+                        <h5 class="card-title">Job Title</h5>
+                        <p class="card-text">Job description - Nullam tempor leo nec libero posuere accumsan vitae sed
+                            nibh. Quisque rhoncus, elit sit amet eleifend scelerisque, eros ante laoreet felis, vitae
+                            pharetra velit quam eu quam. Sed pulvinar eleifend hendrerit. </p>
+                            <h4>Salary Information: $$$</h4>
+                        <a href="#" class="btn btn-link" id="apply"><i class="fa fa-home"></i>Apply for this Job</a>
+                    </div>
+                </div>
+
+
+
+                <div class="card jobcard">
+                    <div class="card-body">
+                        <h5 class="card-title">Job Title</h5>
+                        <p class="card-text">Job description - Nullam tempor leo nec libero posuere accumsan vitae sed
+                            nibh. Quisque rhoncus, elit sit amet eleifend scelerisque, eros ante laoreet felis, vitae
+                            pharetra velit quam eu quam. Sed pulvinar eleifend hendrerit. </p>
+                            <h4>Salary Information: $$$</h4>
+                        <a href="#" class="btn btn-link" id="apply">Apply for this Job</a>
+                    </div>
+
+
+
+                    <!-- END JOB LISTINGS -->
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <br>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+        <footer class="navbar navbar-expand-lg navbar-dark footer">
+            <a class="navbar-brand" href="/#">
+                <img src="/images/logo-color.png" height="60" alt="" id="footer-logo">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto footer-list">
+                    <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link footer-link" href="/joblistings">Job Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-link" href="/postjob">Post a Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link footer-link" href="/login">Login</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+        </footer>
+
+        <!-- END FOOTER -->
+
+
+
 </body>
+
 </html>

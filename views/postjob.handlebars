@@ -1,41 +1,139 @@
-
-
 <body>
-  <form>
-    <div class="form-group row">
-      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">jobtitle</label>
-      <div class="col-sm-10">
-        <input class="form-control form-control-sm" id="title" placeholder="col-form-label-sm">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="colFormLabelSm" id="salary" class="col-sm-2 col-form-label col-form-label-sm">salary</label>
-      <div class="col-sm-10">
-        <input class="form-control form-control-sm" id="owner" placeholder="col-form-label-sm">
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="ques1">Service dog</label>
-      <select class="form-control" id="question1">
-        <option>true</option>
-        <option>false</option>
 
-      </select>
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/#">
+      <img src="/images/logo-white.png" height="60" alt="" id="logo">
+    </a>
+
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <!-- <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li> -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="/joblistings">Job Board</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/postjob">Post a Job</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+
+
+
+      </ul>
+
     </div>
-    <div class="form-group row">
-      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">location</label>
-      <div class="col-sm-10">
-        <input class="form-control form-control-sm" id="location" placeholder="col-form-label-sm">
+  </nav>
+
+
+  <!-- END NAVIGATION BAR -->
+
+  <!-- Hero -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <div class="col-md-4">
+        <h1 class="display-4">h1 Post a Job</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
       </div>
     </div>
-    <div class="form-group row">
-      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">description</label>
-      <div class="col-sm-10">
-        <input class="form-control form-control-sm" id="desc" placeholder="col-form-label-sm">
+  </div>
+
+  <!-- End Hero -->
+
+
+  <div class="container">
+    <form class="form">
+      <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">jobtitle</label>
+        <div class="col-sm-10">
+          <input class="form-control form-control-sm" id="title" placeholder="col-form-label-sm">
+        </div>
       </div>
-    </div>
-    <button type="submit">Submit</button>
-  </form>
+      <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">salary</label>
+        <div class="col-sm-10">
+          <input class="form-control form-control-sm" id="salary" placeholder="col-form-label-sm">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="ques1">Service dog</label>
+        <select class="form-control" id="question1">
+          <option>true</option>
+          <option>false</option>
+
+        </select>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">location</label>
+        <div class="col-sm-10">
+          <input class="form-control form-control-sm" id="location" placeholder="col-form-label-sm">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">description</label>
+        <div class="col-sm-10">
+          <input class="form-control form-control-sm" id="desc" placeholder="col-form-label-sm">
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <br>
+
+  <!-- Footer -->
+
+
+  <div class="footer">
+    <footer class="navbar navbar-expand-lg navbar-dark footer">
+      <a class="navbar-brand" href="#">
+        <img src="/images/logo-color.png" height="60" alt="" id="footer-logo">
+      </a>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto footer-list">
+          <!-- <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li> -->
+
+          <li class="nav-item">
+            <a class="nav-link footer-link" href="/joblistings">Job Board</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link footer-link" href="/postjob">Post a Job</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link footer-link" href="/login">Login</a>
+          </li>
+
+
+
+        </ul>
+
+      </div>
+    </footer>
+
+
+    <!-- END FOOTER -->
+
+
 </body>
+
 
 </html>

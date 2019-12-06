@@ -7,13 +7,13 @@ $(document).ready(function () {
     var description = $("#desc");
     // event listners
     // $document.on("submit", "#form-group", handleFormGroupSubmit);
-    
-    function handleFormGroupSubmit(event) {
-        event.preventDefault();
-        if (!title.val().trim().trim()) {
-            return;
-        }
-    }
+
+    // function handleFormGroupSubmit(event) {
+    //     event.preventDefault();
+    //     if (!title.val().trim().trim()) {
+    //         return;
+    //     }
+    // }
 
 
     //     var API = {
@@ -30,13 +30,27 @@ $(document).ready(function () {
     //     });
     //   }
     // })
-    $(".form-group").on("submit", function (event) {
-
+    $(".form").on("submit", function (event) {
+        event.preventDefault();
         console.log("sub")
+        serviceDog = serviceDog.val();
+
+        console.log(serviceDog)
+
+        if (serviceDog === "true") {
+
+            serviceDog = true;
+        }
+
+        else {
+
+            serviceDog = false;
+        }
+
         let newPetObj = {
             jobTitle: jobTitle.val(),
             salary: salary.val(),
-            serviceQualifications: serviceDog.val(),
+            serviceQualification: serviceDog,
             location: location.val(),
             description: description.val()
         };
@@ -46,6 +60,11 @@ $(document).ready(function () {
             .then(function (response) {
                 console.log(response)
 
+                //need to add thank you page///
+                // $.get("/thankyou", function (data) {
+                //  console.log(data)
+                // })
+               
 
                 // location.reload();
 
