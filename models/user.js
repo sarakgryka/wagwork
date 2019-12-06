@@ -19,6 +19,11 @@ module.exports = function(sequelize, DataTypes){
         }
     );
 
+    User.generateHash = function(password) {
+        return bcrypt.hashSync(password, bcrypt.genSaltSync(8));
+      };
+    
+
     User.validPassword = function(inputPwd, dbPwd){
         return bycrypt.compareSync(inputPwd, dbPwd);
     };   

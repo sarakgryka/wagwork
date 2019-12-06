@@ -39,50 +39,69 @@
   <!-- END NAVIGATION BAR -->
 
   <!-- Hero -->
-  <div class="jumbotron jumbotron-fluid">
+  
     <div class="container">
-      <div class="col-md-4">
-        <h1 class="display-4">h1 Post a Job</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <div class="no-hero col-md-5">
+        <h1 class="display-4">Post a Job</h1>
+        <p class="lead">Fill out the form below to create a job posting for a registered or non-registered service dog.</p>
       </div>
     </div>
-  </div>
+
 
   <!-- End Hero -->
+
+
+
+
+  <div class = "container">
+     <div class="row justify-content-md-center">
+
+    <div class = "col-md-9">
 
 <form>
   <div class="form-group">
     <label for="jobTitle">Job Title</label>
-    <input type="title" class="form-control" id="title" placeholder="Registered Service Animal">
+    <input type="title" class="form-control rounded-0" id="title" placeholder="Registered Service Animal">
   </div>
 
    <div class="form-group">
     <label for="salary">Salary</label>
-    <input type="salary" class="form-control" id="salary" placeholder="$10/hr">
+    <input type="salary" class="form-control rounded-0" id="salary" placeholder="$10/hr">
   </div>
 
   <div class="form-group">
-    <label for="petQualifications">Pet Qualifications</label>
-    <select class="form-control" id="question1">
-      <option>Registered Service Animal</option>
-      <option>Non-Registered Service Animal</option>
+    <label for="petQualifications">Registered Service Animal?</label>
+    <select class="form-control rounded-0" id="question1">
+      <option>Yes</option>
+      <option>No</option>
     </select>
-
   </div>
   
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+     <div class="form-group">
+    <label for="location">Location</label>
+    <input type="location" class="form-control rounded-0" id="location" placeholder="Tempe, Arizona">
   </div>
+
+  <div class="form-group">
+    <label for="jobDescription">Job Description</label>
+    <textarea class="form-control rounded-0" id="desc" rows="3"></textarea>
+  </div>
+
+  <button class="btn btn-primary rounded-0" type="submit">Submit</button>
+
+
 </form>
 
+</div>
+</div>
+</div>
 
 
 
 
 
 
-  <div class="container">
+  {{!-- <div class="container">
     <form class="form">
       <div class="form-group row">
         <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">jobtitle</label>
@@ -118,8 +137,10 @@
       </div>
       <button type="submit">Submit</button>
     </form>
-  </div>
+  </div> --}}
 
+  <br>
+  <br>
   <br>
 
   <!-- Footer -->

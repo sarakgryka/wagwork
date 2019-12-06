@@ -14,6 +14,6 @@
 ## Github Link:
 [GitHub](https://github.com/eirlyse/moaningmyrtles)
 ## Contributors:
-    -Sarah Gryka, Geremy Pelleran, Eirlyse, and Tyler Thompson
+    -Sarah Gryka, Geremy Pelleran, Eirlyse Sollars, and Tyler Thompson
 ## License:
     MIT © WagWork

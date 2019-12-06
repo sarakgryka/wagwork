@@ -25,7 +25,7 @@ router.get("/", function(req,res){
             user: req.user
         });
     }else{
-        res.recirect("/login");
+        res.redirect("/login");
     }
 });
 

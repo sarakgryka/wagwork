@@ -53,7 +53,7 @@ p {
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 450px;
   background-attachment: fixed;
   overflow-x: hidden;
   background-size: 100%;
@@ -65,7 +65,7 @@ p {
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
+  height: 430px;
   background-attachment: fixed;
   overflow-x: hidden;
   background-size: 100%;
@@ -152,7 +152,10 @@ nav {
   text-transform: uppercase;
   padding: 0px 40px !important;
   padding-top: 8px !important;
+  
 }
+
+
 
 .btn-primary:hover{
   background-color: #F06543 !important;
@@ -188,3 +191,11 @@ nav {
   margin-left: 300px;
 }
 
+.no-hero{
+margin-top: 60px;
+margin-bottom: 80px;
+}
+
+.form-group{
+  padding-bottom: 10px;
+}

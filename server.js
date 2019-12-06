@@ -28,12 +28,15 @@ require("./routes/pet-apiRoutes")(app);
 require("./routes/petApp-apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 // require("./routes/auth-controller")(app);
+const authRoutes = require("./routes/auth-controller");
+app.use(authRoutes);
 
 var syncOptions = { force: false };
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
 if (process.env.NODE_ENV === "test") {
+  console.log("running test")
   syncOptions.force = true;
 }
 

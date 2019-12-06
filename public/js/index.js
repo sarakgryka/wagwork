@@ -65,7 +65,7 @@ $(document).ready(function () {
                 //  console.log(data)
                 // })
 
-                location.assign("https://wagwork.herokuapp.com/postjob")
+               
 
             })
 
@@ -116,11 +116,7 @@ $(document).ready(function () {
                 console.log(response)
 
                 //need to add thank you page///
-                // $.get("/thankyou", function (data) {
-                //  console.log(data)
-                // })
-
-
+                // render(response)
                 // location.reload();
 
             })
@@ -251,4 +247,22 @@ getApp();
     // // Add event listeners to the submit and delete buttons
     // $submitBtn.on("click", handleFormSubmit);
     // $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+    // $("#registeredService").click(function () {
+        
+    // })
+    
+    
+   
+    
+    function registered(){
+        if (document.getElementById("registeredService").checked = true) {
+            
+        }
+        if (document.getElementById("nonregisteredService").checked = true) {
+            
+        }
+    
+    };
+
 })
