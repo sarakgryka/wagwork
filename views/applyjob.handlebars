@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
+
 <body>
 
-<!-- NAVIGATION BAR -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/#">
       <img src="/images/logo-white.png" height="60" alt="" id="logo">
     </a>
 
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <!-- <li class="nav-item active">
@@ -31,50 +35,59 @@
           <a class="nav-link" href="/joblistings">Job Board</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/postjob">Post a Job</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="/login">Login</a>
-            </li>
+          <a class="nav-link" href="/postjob">Post a Job</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
 
-        
-        
+
+
       </ul>
-      
+
     </div>
   </nav>
 
 
-<!-- END NAVIGATION BAR -->
+  <!-- END NAVIGATION BAR -->
 
 
 
-    <form>
-  <div class="form-group row">
-    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">name</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control form-control-sm" id="name" placeholder="col-form-label-sm">
+  <form class="formApp">
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">name</label>
+      <div class="col-sm-10">
+        <input  class="form-control form-control-sm" id="nameApp" placeholder="col-form-label-sm">
+      </div>
     </div>
-  </div>
-  <div class="form-group row">
-    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">ownername</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control form-control-sm" id="owner" placeholder="col-form-label-sm">
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">ownername</label>
+      <div class="col-sm-10">
+        <input class="form-control form-control-sm" id="ownerApp" placeholder="col-form-label-sm">
+      </div>
     </div>
-  </div>
-  <div class="form-group row">
-    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control form-control-sm" id="email" placeholder="col-form-label-sm">
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control form-control-sm" id="emailApp" placeholder="col-form-label-sm">
+      </div>
     </div>
-  </div>
-   <div class="form-group row">
-    <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">description</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control form-control-sm" id="desc" placeholder="col-form-label-sm">
+    <div class="form-group row">
+      <label for="ques1">Service dog</label>
+      <select class="form-control" id="serviceApp">
+        <option>Yes</option>
+        <option>No</option>
+
+      </select>
     </div>
-  </div>
-  <button>Submit</button>
-    </form>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">description</label>
+      <div class="col-sm-10">
+        <input  class="form-control form-control-sm" id="descApp" placeholder="col-form-label-sm">
+      </div>
+    </div>
+    <button>Submit</button>
+  </form>
 </body>
+
 </html>

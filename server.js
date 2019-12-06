@@ -27,6 +27,7 @@ app.set("view engine", "handlebars");
 require("./routes/pet-apiRoutes")(app);
 require("./routes/petApp-apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+// require("./routes/auth-controller")(app);
 
 var syncOptions = { force: false };
 

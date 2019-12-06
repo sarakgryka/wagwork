@@ -1,13 +1,19 @@
 # moaningmyrtles
-Project 2 - WagWork
-    WagWork is an app was to create a website that allows users to hire service dogs and also non service dogs. 
-Motivation:
-    The motivation for WagWork is for people that are debaiting on getting a Service dog or a dog in general. This app 
-
-Technologies:
-    -Mysql
-    -Bootstrap
-    -Javascript
-    -Jquery
-    -Sequalize
-    
+# Project 2 - WagWork
+    WagWork is an website that allows users to hire dogs it also lets people specify if they are looking for a service animal or a non registered service dog. The motivation for WagWork is to help people that are debaiting on getting a Service dog/dog in general or just for some recreational fun. Wagwork allows for jobs to be posted in the POST A JOB section.
+## Technologies:
+    * Mysql
+    * Bootstrap
+    * Javascript
+    *Jquery
+    *Sequalize
+    *Materialize
+## Heroku Deployment:
+    -The app is deployed using Heroku on the following link.
+[Heroku](https://wagwork.herokuapp.com/)
+## Github Link:
+[GitHub](https://github.com/eirlyse/moaningmyrtles)
+## Contributors:
+    -Sarah Gryka, Geremy Pelleran, Eirlyse, and Tyler Thompson
+## License:
+    MIT © WagWork

@@ -53,7 +53,7 @@ p {
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 400px;
   background-attachment: fixed;
   overflow-x: hidden;
   background-size: 100%;
@@ -65,7 +65,7 @@ p {
   /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+  height: 400px;
   background-attachment: fixed;
   overflow-x: hidden;
   background-size: 100%;
@@ -150,7 +150,8 @@ nav {
   color: #112542 !important;
   height: 40px;
   text-transform: uppercase;
-  padding: 25px;
+  padding: 0px 40px !important;
+  padding-top: 8px !important;
 }
 
 .btn-primary:hover{
@@ -160,7 +161,10 @@ nav {
 
 .btn-link{
   font-family: 'Nunito Sans', sans-serif !important;
+  font-weight: 600 !important;
   color: #F06543 !important;
+  padding-left: 0px !important;
+  text-transform: uppercase;
 }
 
 .form-control{
@@ -169,3 +173,18 @@ nav {
   border-right: none !important;
   border-bottom: 2px solid #F06543 !important;
 }
+
+.fa-chevron-right{
+  margin-left: 25px;
+}
+
+.jobcard {
+  border: 2px solid #F2F2F2 !important;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+.search-form{
+  margin-left: 300px;
+}
+

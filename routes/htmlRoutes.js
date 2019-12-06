@@ -26,6 +26,14 @@ module.exports = function (app) {
     });
   });
 
+  // Load example page and pass in an example by id
+  app.get("/signup", function (req, res) {
+    res.render("signup", {
+
+
+    });
+  });
+
   // // Render 404 page for any unmatched route
 
   app.get("/joblistings", function (req, res) {
@@ -52,6 +60,12 @@ module.exports = function (app) {
     });
   });
 
+  app.get("/apply", function (req, res) {
+    res.render("applyjob", {
+
+
+    });
+  });
   app.get("*", function (req, res) {
     res.render("404");
   });

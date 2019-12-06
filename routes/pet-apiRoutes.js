@@ -13,6 +13,17 @@ module.exports = function (app) {
       });
   });
 
+  app.get("/api/pets/:id", function (req, res) {
+    db.Pet
+      .findOne({where: {
+        id: req.params.id
+      }})
+      .then(function (data) {
+        res.json(data);
+      });
+  });
+
+
   // Create a new example
   app.post("/api/pets", function (req, res) {
     console.log(req.body)

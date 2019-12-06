@@ -37,7 +37,7 @@ $(document).ready(function () {
 
         console.log(serviceDog)
 
-        if (serviceDog === "true") {
+        if (serviceDog === "Yes") {
 
             serviceDog = true;
         }
@@ -64,7 +64,62 @@ $(document).ready(function () {
                 // $.get("/thankyou", function (data) {
                 //  console.log(data)
                 // })
-               
+
+                location.assign("https://wagwork.herokuapp.com/postjob")
+
+            })
+
+
+
+
+
+
+
+
+
+    })
+
+    var name = $("#nameApp");
+    var ownerName = $("#ownerApp");
+    var email = $("#emailApp");
+    var serviceDogApp = $("#serviceApp");
+    var descriptionApp = $("#descApp");
+
+    $(".formApp").on("submit", function (event) {
+        event.preventDefault();
+        console.log("sub")
+        serviceDogApp = serviceDogApp.val();
+
+        console.log(serviceDogApp)
+
+        if (serviceDogApp === "Yes") {
+
+            serviceDogApp = true;
+        }
+
+        else {
+
+            serviceDogApp = false;
+        }
+
+        let newAppObj = {
+            name: name.val(),
+            ownerName: ownerName.val(),
+            email: email.val(),
+            serviceQualification: serviceDogApp,
+            description: descriptionApp.val()
+        };
+
+        $
+            .post("/api/petapps", newAppObj)
+            .then(function (response) {
+                console.log(response)
+
+                //need to add thank you page///
+                // $.get("/thankyou", function (data) {
+                //  console.log(data)
+                // })
+
 
                 // location.reload();
 
@@ -79,6 +134,23 @@ $(document).ready(function () {
 
 
     })
+
+    $("#apply").on("click", function () {
+        event.preventDefault();
+
+        console.log("clicked")
+getApp();
+
+    })
+
+
+
+    function getApp() {
+
+
+
+    }
+
 
     // // Get references to page elements
     // var $exampleText = $("#example-text");
