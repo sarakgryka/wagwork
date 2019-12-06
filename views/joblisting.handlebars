@@ -135,21 +135,17 @@
             <div class="col-md-7">
 
                 <!-- JOB LISTINGS -->
-
+{{#each joblistings}}
                 <div class="card jobcard rounded-0">
                     <div class="card-body">
-                        <h5 class="card-title">Workin' Woofer</h5>
-                        <p class="card-text">Job description - Boofers you are doing me a frighten most angery pupper I
-                            have ever seen heckin good boys shooberino wrinkler, sub woofer long doggo doing me a
-                            frighten. Pupper corgo mlem long bois super chub, waggy wags fat boi puggo. Snoot much ruin
-                            diet you are doing me the shock very taste wow sub woofer very jealous pupper, I am bekom
-                            fat big ol borkdrive.</p>
-                        <h4>Salary Information: $8/hr</h4>
+                        <h5 class="card-title">{{jobTitle}}</h5>
+                        <p class="card-text">Job description {{description}}</p>
+                        <h4>Salary Information: {{salary}} per hour</h4>
                         <button class="btn btn-link" id="apply">Apply for this Job<i
                                 class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-
+{{/each}}
                 
 
                 {{!-- <div class="card jobcard rounded-0">

@@ -15,9 +15,11 @@ module.exports = function (app) {
 
   app.get("/api/pets/:id", function (req, res) {
     db.Pet
-      .findOne({where: {
-        id: req.params.id
-      }})
+      .findOne({
+        where: {
+          id: req.params.id
+        }
+      })
       .then(function (data) {
         res.json(data);
       });
@@ -30,8 +32,8 @@ module.exports = function (app) {
     db.Pet
       .create(req.body)
       .then(function (data) {
-
-        res.json(data);
+        res.json(data)
+       
       });
   });
 

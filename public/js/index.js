@@ -5,6 +5,10 @@ $(document).ready(function () {
     var serviceDog = $("#question1");
     var location = $("#location");
     var description = $("#desc");
+    let jobTitleId =$("#title")
+
+    
+    // let jobId = localStorage.getItem("jobId");
     // event listners
     // $document.on("submit", "#form-group", handleFormGroupSubmit);
 
@@ -58,14 +62,16 @@ $(document).ready(function () {
         $
             .post("/api/pets", newPetObj)
             .then(function (response) {
-                console.log(response)
+                // console.log(response)
 
                 //need to add thank you page///
                 // $.get("/thankyou", function (data) {
                 //  console.log(data)
                 // })
 
-               
+                window.location.href = "/thankyou";
+
+
 
             })
 
@@ -85,7 +91,9 @@ $(document).ready(function () {
     var serviceDogApp = $("#serviceApp");
     var descriptionApp = $("#descApp");
 
+
     $(".formApp").on("submit", function (event) {
+        console.log(jobTitleId)
         event.preventDefault();
         console.log("sub")
         serviceDogApp = serviceDogApp.val();
@@ -107,7 +115,8 @@ $(document).ready(function () {
             ownerName: ownerName.val(),
             email: email.val(),
             serviceQualification: serviceDogApp,
-            description: descriptionApp.val()
+            description: descriptionApp.val(),
+            // jobId: jobTitleId
         };
 
         $
@@ -118,7 +127,7 @@ $(document).ready(function () {
                 //need to add thank you page///
                 // render(response)
                 // location.reload();
-
+                window.location.href = "/thankyou"
             })
 
 
@@ -133,19 +142,16 @@ $(document).ready(function () {
 
     $("#apply").on("click", function () {
         event.preventDefault();
-
         console.log("clicked")
-getApp();
+        
+// jobId = jobTitle
+// console.log(jobTitle);
+//         localStorage.setItem("jobId", jobId)
+        window.location.href = "/apply"
 
     })
 
 
-
-    function getApp() {
-
-
-
-    }
 
 
     // // Get references to page elements
@@ -249,20 +255,20 @@ getApp();
     // $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
     // $("#registeredService").click(function () {
-        
+
     // })
-    
-    
-   
-    
-    function registered(){
+
+
+
+
+    function registered() {
         if (document.getElementById("registeredService").checked = true) {
-            
+
         }
         if (document.getElementById("nonregisteredService").checked = true) {
-            
+
         }
-    
+
     };
 
 })
