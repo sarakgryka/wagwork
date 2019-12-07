@@ -13,11 +13,11 @@
     *Express
     *Node
 ## Heroku Deployment:
-    -The app is deployed using Heroku on the following link.
+    The app is deployed using Heroku on the following link.
 [Heroku](https://wagwork.herokuapp.com/)
 ## Github Link:
 [GitHub](https://github.com/eirlyse/moaningmyrtles)
 ## Contributors:
-    -Sarah Gryka, Geremy Pelleran, Eirlyse Sollars, and Tyler Thompson
+    Sarah Gryka, Geremy Pelleran, Eirlyse Sollars, and Tyler Thompson
 ## License:
     MIT © WagWork

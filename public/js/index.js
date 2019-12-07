@@ -152,10 +152,10 @@ $(document).ready(function () {
 
     // filter function for registered or unregistered check boxes
     function filter() {
-        if (document.getElementById("registeredService").checked = true) {
+        if (document.getElementById("#registeredService").checked = true) {
             return true;
     }
-        if (document.getElementById("nonregisteredService").checked = false) {
+        if (document.getElementById("#nonregisteredService").checked = false) {
             return false;
     }
 
