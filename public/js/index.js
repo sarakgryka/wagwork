@@ -267,9 +267,9 @@ $(document).ready(function () {
 
     function registered() {
         if (document.getElementById("registeredService").checked = true) {
-
+            alert("is checked")
         }
-        if (document.getElementById("nonregisteredService").checked = true) {
+        if (document.getElementById("nonregisteredService").checked = false) {
 
         }
 
