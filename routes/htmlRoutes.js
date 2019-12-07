@@ -37,14 +37,14 @@ module.exports = function (app) {
   // // Render 404 page for any unmatched route
 
   app.get("/joblistings", function (req, res) {
-db.Pet.findAll({})
-.then(function(data){
-  console.log(data)
-    res.render("joblisting", {
-joblistings:data
+    db.Pet.findAll({})
+      .then(function (data) {
+        console.log(data)
+        res.render("joblisting", {
+          joblistings: data
 
-    })
-  })
+        })
+      })
   })
 
   app.get("/postjob", function (req, res) {
@@ -70,13 +70,17 @@ joblistings:data
   });
 
   app.get("/apply/:id", function (req, res) {
-    console.log(req.params.id)
-
+  
+      
+   
     res.render("applyjob", {
 
 
+
+      // })
     });
   });
+
   app.get("*", function (req, res) {
     res.render("404");
   });

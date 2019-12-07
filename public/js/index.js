@@ -93,7 +93,7 @@ $(document).ready(function () {
 
 
     $(".formApp").on("submit", function (event) {
-        console.log(jobTitleId)
+       
         event.preventDefault();
         console.log("sub")
         serviceDogApp = serviceDogApp.val();
@@ -140,14 +140,18 @@ $(document).ready(function () {
 
     })
 
-    $("#apply").on("click", function () {
+    $(".apply").on("click", function () {
         event.preventDefault();
+
+      
         console.log("clicked")
         
-// jobId = jobTitle
-// console.log(jobTitle);
+// jobId = jobId
+// console.log(jobId);
 //         localStorage.setItem("jobId", jobId)
         window.location.href = "/apply"
+
+        
 
     })
 
@@ -271,4 +275,5 @@ $(document).ready(function () {
 
     };
 
+   
 })
