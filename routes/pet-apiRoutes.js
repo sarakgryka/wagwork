@@ -25,6 +25,23 @@ module.exports = function (app) {
       });
   });
 
+  // app.get("/api/pets/true", function (req, res) {
+  //   db.Pet
+  //     .findOne({
+  //       where: {
+  //         serviceQualification: true
+  //       }
+  //     })
+  //     .then(function (data) {
+  //       console.log(data)
+  //       res.render("joblisting", {
+  //         joblistings: data
+
+  //       })
+        
+  //     });
+  // });
+
 
   // Create a new example
   app.post("/api/pets", function (req, res) {

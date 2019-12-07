@@ -78,11 +78,6 @@ $(document).ready(function () {
 
 
 
-
-
-
-
-
     })
 
     var name = $("#nameApp");
@@ -165,7 +160,6 @@ $(document).ready(function () {
     }
 
 };
-
 
 
     // // Get references to page elements
@@ -271,7 +265,22 @@ $(document).ready(function () {
     // $("#registeredService").click(function () {
 
     // })
+$("#nonregisteredService").on("click", function(){
 
+    // $("#nonregisteredService").attr("value", true)
+    // $("#registeredService").attr("value", false)
+    window.location.href = "/joblistings/false"
+
+    console.log("clicked")
+})
+
+$("#registeredService").on("click", function(){
+
+    // $("#registeredService").attr("value", true)
+    // $("#nonregisteredService").attr("value", false)
+    window.location.href = "/joblistings/true"
+    console.log("clicked")
+})
 
 
 

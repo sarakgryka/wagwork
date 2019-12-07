@@ -44,7 +44,7 @@
     <div class="jumbotron jumbotron-fluid" id="joblistinghero">
         <div class="container">
             <div class="col-md-4">
-                <h1 class="display-4">Job Board</h1>
+                <h1 class="display-4">Job Listings</h1>
                 <p class="lead">Find your doggo's next gig.</p>
             </div>
         </div>
@@ -56,12 +56,6 @@
 
 
 
-    <div class="container">
-        <div class="col-md-4">
-            <h1 class="display-4">Job Listings</h1>
-            <p class="lead">wrinkler wow very biscit smol.</p>
-        </div>
-    </div>
 
 
     {{!-- <div class="header row pb-5 pt-3">
@@ -106,8 +100,7 @@
 
                     <h4> Pet Qualifications </h4>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="registeredService"
-                            id="registeredService">
+                        <input class="form-check-input" type="checkbox" value="registeredService" id="registeredService">
                         <label class="form-check-label" for="registeredService">
                             Registered Service Animal
                         </label>
@@ -142,8 +135,8 @@
             <div class="col-md-7">
 
                 <!-- JOB LISTINGS -->
-                {{#each joblistings}}
-
+{{#each joblistings}}
+{{#if serviceQualification}}
                 <div class="card jobcard rounded-0">
                     <div class="card-body">
                         <h5 class="card-title">{{jobTitle}}</h5>
@@ -153,9 +146,9 @@
                                 class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-
-                {{/each}}
-
+         {{/if}}       
+{{/each}}
+                
 
                 {{!-- <div class="card jobcard rounded-0">
                     <div class="card-body">
@@ -168,7 +161,7 @@
                     </div>
                 </div> --}}
 
-
+               
 
 
                 <!-- END JOB LISTINGS -->
@@ -186,7 +179,7 @@
     <br>
     <br>
 
-    <!-- FOOTER -->
+  <!-- FOOTER -->
 
     <div class="footer">
         <footer class="navbar navbar-expand-lg navbar-dark footer">
@@ -223,12 +216,12 @@
             </div>
         </footer>
 
-        <!-- END FOOTER -->
+         <!-- END FOOTER -->
 
-
+        
 
 
 
 </body>
 
-</html>
+</html> 

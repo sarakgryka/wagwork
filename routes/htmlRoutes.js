@@ -47,6 +47,26 @@ module.exports = function (app) {
       })
   })
 
+  app.get("/joblistings/true", function (req, res) {
+    db.Pet.findAll({})
+      .then(function (data) {
+        console.log(data)
+        res.render("joblistingTrue", {
+          joblistings: data
+
+        })
+      })
+  })
+  app.get("/joblistings/false", function (req, res) {
+    db.Pet.findAll({})
+      .then(function (data) {
+        console.log(data)
+        res.render("joblistingFalse", {
+          joblistings: data
+
+        })
+      })
+  })
   app.get("/postjob", function (req, res) {
     res.render("postjob", {
 

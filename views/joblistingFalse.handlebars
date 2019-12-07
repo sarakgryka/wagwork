@@ -44,7 +44,7 @@
     <div class="jumbotron jumbotron-fluid" id="joblistinghero">
         <div class="container">
             <div class="col-md-4">
-                <h1 class="display-4">Job Board</h1>
+                <h1 class="display-4">Job Listings</h1>
                 <p class="lead">Find your doggo's next gig.</p>
             </div>
         </div>
@@ -52,17 +52,22 @@
 
     <!-- END HERO -->
 
+    <!-- INTRO CONTENT -->
+
     <br>
-
-
 
     <div class="container">
         <div class="col-md-4">
-            <h1 class="display-4">Job Listings</h1>
+            <h2 class="display-4">Job Listings</h2>
             <p class="lead">wrinkler wow very biscit smol.</p>
         </div>
     </div>
 
+    <!-- END INTRO CONTENT -->
+
+
+
+    <!-- SEARCH BAR -->
 
     {{!-- <div class="header row pb-5 pt-3">
 
@@ -89,6 +94,7 @@
 
     </div> --}}
 
+ <!-- END SEARCH BAR -->
 
 
 
@@ -143,7 +149,7 @@
 
                 <!-- JOB LISTINGS -->
                 {{#each joblistings}}
-
+                {{#unless serviceQualification}}
                 <div class="card jobcard rounded-0">
                     <div class="card-body">
                         <h5 class="card-title">{{jobTitle}}</h5>
@@ -153,7 +159,7 @@
                                 class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-
+                {{/unless}}
                 {{/each}}
 
 

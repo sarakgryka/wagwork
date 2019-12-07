@@ -7,7 +7,11 @@
     * Javascript
     *Jquery
     *Sequalize
-    *Materialize
+    *Passport
+    *Handlebars
+    *Heroku
+    *Express
+    *Node
 ## Heroku Deployment:
     -The app is deployed using Heroku on the following link.
 [Heroku](https://wagwork.herokuapp.com/)
