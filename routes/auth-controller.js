@@ -56,7 +56,7 @@ router.get("/signup", function(req, res) {
   //auth logout
   router.get("/logout", function(req, res) {
     req.logout();
-    res.redirect("/");
+    res.redirect("/login");
   });
   
   router.get("*", function(req, res) {
