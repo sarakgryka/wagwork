@@ -146,15 +146,25 @@ $(document).ready(function () {
       
         console.log("clicked")
         
-// jobId = jobId
-// console.log(jobId);
-//         localStorage.setItem("jobId", jobId)
+    // jobId = jobId
+    // console.log(jobId);
+    //         localStorage.setItem("jobId", jobId)
         window.location.href = "/apply"
 
         
 
     })
 
+    // filter function for registered or unregistered check boxes
+    function filter() {
+        if (document.getElementById("registeredService").checked = true) {
+            console.log("checked registered");
+    }
+        if (document.getElementById("nonregisteredService").checked = false) {
+            console.log("checked unregistered");
+    }
+
+};
 
 
 
@@ -265,15 +275,6 @@ $(document).ready(function () {
 
 
 
-    function registered() {
-        if (document.getElementById("registeredService").checked = true) {
-            alert("is checked")
-        }
-        if (document.getElementById("nonregisteredService").checked = false) {
-
-        }
-
-    };
 
    
 })

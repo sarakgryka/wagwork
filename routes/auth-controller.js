@@ -44,16 +44,16 @@ router.post(
 router.get("/signup", function(req, res) {
     res.render("signup", { message: req.flash("error") });
   });
-  
+  //auth login
   router.post(
     "/signup",
     passport.authenticate("local-signup", {
-      successRedirect: "/",
+      successRedirect: "/#",
       failureRedirect: "/signup",
       failureFlash: true
     })
   );
-  
+  //auth logout
   router.get("/logout", function(req, res) {
     req.logout();
     res.redirect("/");

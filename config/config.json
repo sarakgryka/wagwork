@@ -15,7 +15,7 @@
     "logging": false
   },
   "production": {
-    "use_env_variable": "JAWSDB_URL",
+    "use_env_variable": "mysql://ghi8o9ytpduu9qs3:pijjnd23qye7j1bp@hcm4e9frmbwfez47.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/f23xykz5xjyegzu5",
     "dialect": "mysql"
   }
 }
