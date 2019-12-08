@@ -20,4 +20,6 @@ WagWork is an website that allows users to hire dogs it also lets people specify
 ## Contributors:
     Sarah Gryka, Geremy Pelleran, Eirlyse Sollars, and Tyler Thompson
 ## License:
-    MIT © WagWork
+    MIT © WagWork 
+
+    

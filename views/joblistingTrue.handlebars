@@ -9,12 +9,12 @@
         </a>
 
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        {{!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> --}}
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        {{!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> --}}
             <ul class="navbar-nav ml-auto">
                 <!-- <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -100,7 +100,8 @@
 
                     <h4> Pet Qualifications </h4>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="registeredService" id="registeredService">
+                        <input class="form-check-input" type="checkbox" value="registeredService"
+                            id="registeredService">
                         <label class="form-check-label" for="registeredService">
                             Registered Service Animal
                         </label>
@@ -135,8 +136,8 @@
             <div class="col-md-7">
 
                 <!-- JOB LISTINGS -->
-{{#each joblistings}}
-{{#if serviceQualification}}
+                {{#each joblistings}}
+                {{#if serviceQualification}}
                 <div class="card jobcard rounded-0">
                     <div class="card-body">
                         <h5 class="card-title">{{jobTitle}}</h5>
@@ -146,9 +147,9 @@
                                 class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
-         {{/if}}       
-{{/each}}
-                
+                {{/if}}
+                {{/each}}
+
 
                 {{!-- <div class="card jobcard rounded-0">
                     <div class="card-body">
@@ -161,7 +162,7 @@
                     </div>
                 </div> --}}
 
-               
+
 
 
                 <!-- END JOB LISTINGS -->
@@ -179,7 +180,7 @@
     <br>
     <br>
 
-  <!-- FOOTER -->
+    <!-- FOOTER -->
 
     <div class="footer">
         <footer class="navbar navbar-expand-lg navbar-dark footer">
@@ -188,12 +189,6 @@
             </a>
 
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto footer-list">
                     <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -216,12 +211,12 @@
             </div>
         </footer>
 
-         <!-- END FOOTER -->
+        <!-- END FOOTER -->
 
-        
+
 
 
 
 </body>
 
-</html> 
+</html>

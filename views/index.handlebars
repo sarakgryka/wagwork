@@ -27,12 +27,12 @@
     </a>
 
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    {{!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> --}}
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    {{!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> --}}
       <ul class="navbar-nav ml-auto">
         <!-- <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -90,8 +90,8 @@
             </div>
           </div>
           <div class="col-md-1"></div>
-          <div class="col-md-4">
-            <img src="/images/dog2.png" class="content-image">
+          <div class="col-md-4 wrapper">
+            <img src="/images/dog2.png" class="content-image img-fluid">
           </div>
 
         </div>
@@ -104,10 +104,14 @@
   <br>
 
   <!-- FULL WIDTH IMAGE -->
+<div class="500">
+<img class="full-width" 
+src="/images/full-width-2.jpg" />
+</div>
 
-  <div class="full-width">
-    <img src="/images/fullwidthdog.png">
-  </div>
+  {{!-- <div class="full-width img-fluid">
+    <img src="/images/full-width-2.jpg">
+  </div> --}}
 
   <!-- END FULL WIDTH IMAGE -->
 
@@ -132,8 +136,8 @@
             </div>
           </div>
           <div class="col-md-1"></div>
-          <div class="col-md-4">
-            <img src="/images/dog1.png" class="content-image">
+          <div class="col-md-4 wrapper">
+            <img src="/images/dog1.png" class="content-image img-fluid">
           </div>
 
         </div>
@@ -155,12 +159,8 @@
       </a>
 
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
         <ul class="navbar-nav mx-auto footer-list">
           <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -180,7 +180,7 @@
 
         </ul>
 
-      </div>
+  
     </footer>
 
 

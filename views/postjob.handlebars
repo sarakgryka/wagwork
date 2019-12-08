@@ -7,12 +7,12 @@
     </a>
 
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    {{!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> --}}
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    {{!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> --}}
       <ul class="navbar-nav ml-auto">
         <!-- <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -39,13 +39,14 @@
   <!-- END NAVIGATION BAR -->
 
   <!-- Hero -->
-  
-    <div class="container">
-      <div class="no-hero col-md-5">
-        <h1 class="display-4">Post a Job</h1>
-        <p class="lead">Fill out the form below to create a job posting for a registered or non-registered service dog.</p>
-      </div>
+
+  <div class="container">
+    <div class="no-hero col-md-5">
+      <h1 class="display-4">Post a Job</h1>
+      <p class="lead">Fill out the form below to create a job posting for a registered or non-registered service dog.
+      </p>
     </div>
+  </div>
 
 
   <!-- End Hero -->
@@ -53,48 +54,48 @@
 
 
 
-  <div class = "container">
-     <div class="row justify-content-md-center">
+  <div class="container">
+    <div class="row justify-content-md-center">
 
-    <div class = "col-md-9">
+      <div class="col-md-9">
 
-<form class= "form">
-  <div class="form-group">
-    <label for="jobTitle">Job Title</label>
-    <input type="title" class="form-control rounded-0" id="title" placeholder="Registered Service Animal">
+        <form class="form">
+          <div class="form-group">
+            <label for="jobTitle">Job Title</label>
+            <input type="title" class="form-control rounded-0" id="title" placeholder="Registered Service Animal">
+          </div>
+
+          <div class="form-group">
+            <label for="salary">Salary per hour</label>
+            <input type="salary" class="form-control rounded-0" id="salary" placeholder="10">
+          </div>
+
+          <div class="form-group">
+            <label for="petQualifications">Registered Service Animal?</label>
+            <select class="form-control rounded-0" id="question1">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Location</label>
+            <input type="location" class="form-control rounded-0" id="location" placeholder="Tempe, Arizona">
+          </div>
+
+          <div class="form-group">
+            <label for="jobDescription">Job Description</label>
+            <textarea class="form-control rounded-0" id="desc" rows="3"></textarea>
+          </div>
+
+          <button class="btn btn-primary rounded-0" type="submit">Submit</button>
+
+
+        </form>
+
+      </div>
+    </div>
   </div>
-
-   <div class="form-group">
-    <label for="salary">Salary per hour</label>
-    <input type="salary" class="form-control rounded-0" id="salary" placeholder="10">
-  </div>
-
-  <div class="form-group">
-    <label for="petQualifications">Registered Service Animal?</label>
-    <select class="form-control rounded-0" id="question1">
-      <option>Yes</option>
-      <option>No</option>
-    </select>
-  </div>
-  
-     <div class="form-group">
-    <label for="location">Location</label>
-    <input type="location" class="form-control rounded-0" id="location" placeholder="Tempe, Arizona">
-  </div>
-
-  <div class="form-group">
-    <label for="jobDescription">Job Description</label>
-    <textarea class="form-control rounded-0" id="desc" rows="3"></textarea>
-  </div>
-
-  <button class="btn btn-primary rounded-0" type="submit">Submit</button>
-
-
-</form>
-
-</div>
-</div>
-</div>
 
 
 
@@ -153,12 +154,6 @@
       </a>
 
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto footer-list">
           <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>

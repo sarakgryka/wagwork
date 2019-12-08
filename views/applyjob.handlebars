@@ -20,12 +20,12 @@
     </a>
 
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    {{!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> --}}
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    {{!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> --}}
       <ul class="navbar-nav ml-auto">
         <!-- <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -53,13 +53,13 @@
 
 
   <!-- Hero -->
-  
-    <div class="container">
-      <div class="no-hero col-md-5">
-        <h1 class="display-4">Apply for a Job </h1>
-        <p class="lead">Fill out the form below to get your doggo payin' some rent.</p>
-      </div>
+
+  <div class="container">
+    <div class="no-hero col-md-5">
+      <h1 class="display-4">Apply for a Job </h1>
+      <p class="lead">Fill out the form below to get your doggo payin' some rent.</p>
     </div>
+  </div>
 
 
   <!-- End Hero -->
@@ -67,59 +67,59 @@
 
 
 
-  <div class = "container">
-     <div class="row justify-content-md-center">
+  <div class="container">
+    <div class="row justify-content-md-center">
 
-    <div class = "col-md-9">
+      <div class="col-md-9">
 
-<form class = "formApp">
-  
-  <div class="form-group">
-    <label for="petName">Pet's Name</label>
-    <input type="petName" class="form-control rounded-0" id="nameApp" placeholder="Max">
+        <form class="formApp">
+
+          <div class="form-group">
+            <label for="petName">Pet's Name</label>
+            <input type="petName" class="form-control rounded-0" id="nameApp" placeholder="Max">
+          </div>
+
+          <div class="form-group">
+            <label for="ownerName">Owner's Name</label>
+            <input type="ownerName" class="form-control rounded-0" id="ownerApp" placeholder="BillyBob">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control rounded-0" id="emailApp" placeholder="billybob@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label for="petQualifications">Registered Service Animal?</label>
+            <select class="form-control rounded-0" id="serviceApp">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+
+
+          <div class="form-group">
+            <label for="jobDescription">Description</label>
+            <textarea class="form-control rounded-0" id="descApp" rows="3"></textarea>
+          </div>
+
+          <button class="btn btn-primary rounded-0" type="submit" id="submit-btn">Submit</button>
+
+
+        </form>
+
+      </div>
+    </div>
   </div>
 
-   <div class="form-group">
-    <label for="ownerName">Owner's Name</label>
-    <input type="ownerName" class="form-control rounded-0" id="ownerApp" placeholder="BillyBob">
-  </div>
-
-     <div class="form-group">
-    <label for="email">Email Address</label>
-    <input type="email" class="form-control rounded-0" id="emailApp" placeholder="billybob@gmail.com">
-  </div>
-
-  <div class="form-group">
-    <label for="petQualifications">Registered Service Animal?</label>
-    <select class="form-control rounded-0" id="serviceApp">
-      <option>Yes</option>
-      <option>No</option>
-    </select>
-  </div>
-  
-
-  <div class="form-group">
-    <label for="jobDescription">Description</label>
-    <textarea class="form-control rounded-0" id="descApp" rows="3"></textarea>
-  </div>
-
-  <button class="btn btn-primary rounded-0" type="submit" id="submit-btn">Submit</button>
-
-
-</form>
-
-</div>
-</div>
-</div>
-
-<br>
-<br>
-<br>
-<br>
+  <br>
+  <br>
+  <br>
+  <br>
 
 
 
-{{!-- 
+  {{!-- 
 
 
   <form class="formApp">
@@ -162,42 +162,37 @@
 
   <!-- FOOTER -->
 
-    <div class="footer">
-        <footer class="navbar navbar-expand-lg navbar-dark footer">
-            <a class="navbar-brand" href="/#">
-                <img src="/images/logo-color.png" height="60" alt="" id="footer-logo">
-            </a>
+  <div class="footer">
+    <footer class="navbar navbar-expand-lg navbar-dark footer">
+      <a class="navbar-brand" href="/#">
+        <img src="/images/logo-color.png" height="60" alt="" id="footer-logo">
+      </a>
 
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto footer-list">
-                    <!-- <li class="nav-item active">
+        <ul class="navbar-nav mx-auto footer-list">
+          <!-- <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li> -->
 
-                    <li class="nav-item">
-                        <a class="nav-link footer-link" href="/joblistings">Job Board</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link footer-link" href="/postjob">Post a Job</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link footer-link" href="/login">Log Out</a>
-                    </li>
+          <li class="nav-item">
+            <a class="nav-link footer-link" href="/joblistings">Job Board</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link footer-link" href="/postjob">Post a Job</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link footer-link" href="/login">Log Out</a>
+          </li>
 
 
 
-                </ul>
+        </ul>
 
-            </div>
-        </footer>
+      </div>
+    </footer>
 
-         <!-- END FOOTER -->
+    <!-- END FOOTER -->
 
 </body>
 

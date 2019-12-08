@@ -6,6 +6,7 @@ $(document).ready(function () {
     var location = $("#location");
     var description = $("#desc");
     let jobTitleId =$("#title")
+    let jobId =localStorage.getItem("jobId")
 
     
     // let jobId = localStorage.getItem("jobId");
@@ -135,31 +136,26 @@ $(document).ready(function () {
 
     })
 
+
     $(".apply").on("click", function () {
         event.preventDefault();
 
-      
+        // var listItem = $(this).parent("card").parent("card-body").parent("card-title");
+        
+        // console.log(listItem)
         console.log("clicked")
         
     // jobId = jobId
     // console.log(jobId);
-    //         localStorage.setItem("jobId", jobId)
+            localStorage.setItem("jobId", jobTitleId)
+            console.log(jobTitleId)
         window.location.href = "/apply"
 
         
 
     })
 
-    // filter function for registered or unregistered check boxes
-    function filter() {
-        if (document.getElementById("#registeredService").checked = true) {
-            return true;
-    }
-        if (document.getElementById("#nonregisteredService").checked = false) {
-            return false;
-    }
 
-};
 
 
     // // Get references to page elements

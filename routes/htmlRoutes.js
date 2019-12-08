@@ -4,11 +4,22 @@ const express = require("express");
 const router = express.Router();
 
 
+
+
 // dbPets and dbPet still need to be defined//
 
 // Load index page
 module.exports = function (app) {
   app.get("/", function (req, res) {
+
+
+    res.render("login", {
+      msg: "Welcome!",
+
+    });
+
+  });
+  app.get("/home", function (req, res) {
 
 
     res.render("index", {
@@ -18,10 +29,10 @@ module.exports = function (app) {
 
   });
 
+
   // Load example page and pass in an example by id
   app.get("/login", function (req, res) {
     res.render("login", {
-
 
     });
   });
@@ -83,16 +94,16 @@ module.exports = function (app) {
   });
 
   app.get("/apply", function (req, res) {
-    res.render("applyjob", {
 
+
+    res.render("applyjob", {
 
     });
   });
-
   app.get("/apply/:id", function (req, res) {
-  
-      
-   
+
+
+
     res.render("applyjob", {
 
 
