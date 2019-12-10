@@ -1,23 +1,23 @@
 const passport = require("passport");
 const express = require("express");
-const flash = require("connect-flash");
-const session = require("express-session");
+// const flash = require("connect-flash");
+// const session = require("express-session");
 const router = express.Router();
 
-//Flash
-router.use (
-    session({
-        cookie: {maxAge: 86400000},
-        secret: "wootwoot"
-    })
-);
+// //Flash
+// router.use (
+//     session({
+//         cookie: {maxAge: 86400000},
+//         secret: "wootwoot"
+//     })
+// );
 
-router.use(flash());
+// router.use(flash());
 
-//Passport
-require("../config/passport")(passport);
-router.use(passport.initialize());
-router.use(passport.session());
+// //Passport
+// require("../config/passport")(passport);
+// router.use(passport.initialize());
+// router.use(passport.session());
 
 router.get("/", function(req,res){
     if (req.user){

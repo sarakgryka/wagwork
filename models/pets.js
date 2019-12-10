@@ -19,6 +19,17 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT
     },
   });
+//association
+  Pet.associate = function(models) {
+    
+    Pet.belongsTo(models.user, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
+
+
   return Pet;
 
 

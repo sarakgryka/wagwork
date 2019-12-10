@@ -7,18 +7,21 @@ module.exports = function (app) {
   // Get all examples
   app.get("/api/pets", function (req, res) {
     db.Pet
-      .findAll({})
+      .findAll({
+        // include: [db.user]
+      })
       .then(function (data) {
         res.json(data);
       });
   });
 
-  app.get("/api/pets/:id", function (req, res) {
+  app.get("/api/users", function (req, res) {
     db.Pet
-      .findOne({
+      .findAll({
         where: {
-          id: req.params.id
-        }
+          id: req.user.id
+        },
+        // include: [db.user]
       })
       .then(function (data) {
         res.json(data);
@@ -46,6 +49,8 @@ module.exports = function (app) {
   // Create a new example
   app.post("/api/pets", function (req, res) {
     console.log(req.body)
+    console.log(req.user)
+    req.body.userId = req.user.userId;
     db.Pet
       .create(req.body)
       .then(function (data) {

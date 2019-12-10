@@ -6,6 +6,26 @@ var db = require("./models");
 
 var app = express();
 var PORT = process.env.PORT || 3000;
+const passport = require("passport");
+
+const flash = require("connect-flash");
+const session = require("express-session");
+
+
+//Flash
+app.use (
+    session({
+        cookie: {maxAge: 86400000},
+        secret: "wootwoot"
+    })
+);
+
+app.use(flash());
+
+//Passport
+require("./config/passport")(passport);
+app.use(passport.initialize());
+app.use(passport.session());
 
 //passport//
 
@@ -24,6 +44,7 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Routes
+
 require("./routes/pet-apiRoutes")(app);
 require("./routes/petApp-apiRoutes")(app);
 require("./routes/htmlRoutes")(app);

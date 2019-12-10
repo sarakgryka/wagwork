@@ -21,7 +21,7 @@ module.exports = function (app) {
   });
   app.get("/home", function (req, res) {
 
-
+console.log(req.user)
     res.render("index", {
       msg: "Welcome!",
 
@@ -92,6 +92,34 @@ module.exports = function (app) {
 
     });
   });
+
+  app.get("/userposts", function(req,res){
+    // req.body.userId = req.user.id;
+    // var query = {};
+    // if (req.query.user.id) {
+    //   query.userId = req.query.user.id
+    // }
+
+
+    db.Pet.findAll({
+      where: {
+        userId: req.user.id
+      },
+      include: [db.user]
+    })
+      .then(function (data) {
+        console.log(data)
+        res.render("userinfo", {
+          posts: data
+
+        })
+      })
+
+    // res.render("userinfo", {
+
+
+    // })
+  })
 
   app.get("/apply", function (req, res) {
 

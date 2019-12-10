@@ -58,6 +58,7 @@ $(document).ready(function () {
             serviceQualification: serviceDog,
             location: location.val(),
             description: description.val()
+            
         };
 
         $
@@ -86,6 +87,7 @@ $(document).ready(function () {
     var email = $("#emailApp");
     var serviceDogApp = $("#serviceApp");
     var descriptionApp = $("#descApp");
+    
 
 
     $(".formApp").on("submit", function (event) {
@@ -112,6 +114,7 @@ $(document).ready(function () {
             email: email.val(),
             serviceQualification: serviceDogApp,
             description: descriptionApp.val(),
+            
             // jobId: jobTitleId
         };
 
@@ -277,6 +280,26 @@ $("#registeredService").on("click", function(){
     window.location.href = "/joblistings/true"
     console.log("clicked")
 })
+
+$(".delete").on("click", function(event){
+
+
+    
+    var id = $(this).data("id");
+ 
+    console.log(id)
+    $.ajax("/api/pets/" + id, {
+        type: "DELETE"
+      }).then(
+        function() {
+          console.log("deleted id ", id);
+          // Reload the page to get the updated list
+          window.location.href = "/userposts"
+        }
+      );
+  
+ })
+
 
 
 

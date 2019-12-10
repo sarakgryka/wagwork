@@ -27,7 +27,15 @@ module.exports = function(sequelize, DataTypes){
     User.validPassword = function(inputPwd, dbPwd){
         return bcrypt.compareSync(inputPwd, dbPwd);
     };   
-   
+
+    //association//
+    User.associate = function(models) {
+       
+        User.hasMany(models.Pet, {
+          onDelete: "cascade"
+        });
+      };
+    
 return User;
 
 };

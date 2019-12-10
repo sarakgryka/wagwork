@@ -1,0 +1,16 @@
+<h1>My job postings</h1>
+
+   {{#each posts}}
+
+                <div class="card jobcard rounded-0">
+                    <div class="card-body">
+
+                        <h5 class="card-title">{{jobTitle}}</h5>
+                        {{!-- <h5 class ="postId">{{this.id}}</h5> --}}
+                        <p class="card-text">Job description {{description}}.</p>
+                        <h4>Salary Information: {{salary}} per hour</h4>
+                        <button data-id="{{id}}"  class="delete btn btn-link">Delete Post</button>
+                    </div>
+                </div>
+
+                {{/each}}
