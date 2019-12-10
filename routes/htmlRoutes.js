@@ -79,7 +79,8 @@ console.log(req.user)
       })
   })
   app.get("/postjob", function (req, res) {
-   
+    console.log(req.user)
+    req.body.userId = req.user.id;
     res.render("postjob", {
 
 
@@ -88,7 +89,7 @@ console.log(req.user)
   })
 
   app.get("/thankyou", function (req, res) {
- 
+    req.body.userId = req.user.id;
     res.render("thankyou", {
 
 

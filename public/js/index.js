@@ -38,7 +38,7 @@ $(document).ready(function () {
     $(".form").on("submit", function (event) {
 
         event.preventDefault();
-       
+        
         console.log("sub")
         serviceDog = serviceDog.val();
 
@@ -59,8 +59,8 @@ $(document).ready(function () {
             salary: salary.val(),
             serviceQualification: serviceDog,
             location: location.val(),
-            description: description.val()
-            
+            description: description.val(),
+          
             
             
         };

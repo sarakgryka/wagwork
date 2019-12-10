@@ -44,10 +44,10 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Routes
-
+require("./routes/htmlRoutes")(app);
 require("./routes/pet-apiRoutes")(app);
 require("./routes/petApp-apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+
 // require("./routes/auth-controller")(app);
 const authRoutes = require("./routes/auth-controller");
 app.use(authRoutes);
