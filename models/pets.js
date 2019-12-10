@@ -25,7 +25,7 @@ module.exports = function(sequelize, DataTypes) {
     Pet.belongsTo(models.user, {
       foreignKey: {
        
-        // defaultValue: 1,
+        defaultValue: 1,
         allowNull: false
       
       }
