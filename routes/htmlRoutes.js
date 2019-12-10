@@ -79,7 +79,7 @@ console.log(req.user)
       })
   })
   app.get("/postjob", function (req, res) {
-    req.body.userId = req.user.id;
+   
     res.render("postjob", {
 
 
@@ -88,6 +88,7 @@ console.log(req.user)
   })
 
   app.get("/thankyou", function (req, res) {
+ 
     res.render("thankyou", {
 
 
@@ -104,7 +105,7 @@ console.log(req.user)
 
     db.Pet.findAll({
       where: {
-        id: req.user.id
+        userId: req.user.id
       }
     })
       .then(function (data) {

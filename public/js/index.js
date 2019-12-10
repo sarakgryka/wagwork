@@ -95,7 +95,7 @@ $(document).ready(function () {
 
 
     $(".formApp").on("submit", function (event) {
-       
+    
         event.preventDefault();
         console.log("sub")
         serviceDogApp = serviceDogApp.val();

@@ -6,10 +6,10 @@ const router = express.Router();
 module.exports = function (app) {
   // Get all examples
   app.get("/api/pets", function (req, res) {
-    console.log(req.body)
-    console.log(req.user)
+  //   console.log(req.body)
+  //   console.log(req.user)
 
-   req.body.userId = req.user.userId;
+  //  req.body.userId = req.user.userId;
 
     db.Pet
       .findAll({
@@ -56,7 +56,7 @@ module.exports = function (app) {
     console.log(req.user)
 
     req.body.userId = req.user.userId;
-  
+  db.Pet.userId = db.user.id
     db.Pet
       .create(req.body)
       .then(function (data) {
