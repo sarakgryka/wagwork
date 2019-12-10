@@ -17,15 +17,19 @@ module.exports = function(sequelize, DataTypes) {
     }, 
     description:{
       type: DataTypes.TEXT
-    },
+    }
   });
 //association
   Pet.associate = function(models) {
     
     Pet.belongsTo(models.user, {
       foreignKey: {
+       
+        // defaultValue: 1,
         allowNull: false
+      
       }
+
     });
   };
 

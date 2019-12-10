@@ -79,6 +79,7 @@ console.log(req.user)
       })
   })
   app.get("/postjob", function (req, res) {
+    req.body.userId = req.user.id;
     res.render("postjob", {
 
 
@@ -94,7 +95,7 @@ console.log(req.user)
   });
 
   app.get("/userposts", function(req,res){
-    // req.body.userId = req.user.id;
+    req.body.userId = req.user.id;
     // var query = {};
     // if (req.query.user.id) {
     //   query.userId = req.query.user.id
@@ -103,9 +104,8 @@ console.log(req.user)
 
     db.Pet.findAll({
       where: {
-        userId: req.user.id
-      },
-      include: [db.user]
+        id: req.user.id
+      }
     })
       .then(function (data) {
         console.log(data)

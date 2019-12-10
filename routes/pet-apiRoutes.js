@@ -6,6 +6,11 @@ const router = express.Router();
 module.exports = function (app) {
   // Get all examples
   app.get("/api/pets", function (req, res) {
+    console.log(req.body)
+    console.log(req.user)
+
+   req.body.userId = req.user.userId;
+
     db.Pet
       .findAll({
         // include: [db.user]
@@ -20,8 +25,7 @@ module.exports = function (app) {
       .findAll({
         where: {
           id: req.user.id
-        },
-        // include: [db.user]
+        }
       })
       .then(function (data) {
         res.json(data);
@@ -50,7 +54,9 @@ module.exports = function (app) {
   app.post("/api/pets", function (req, res) {
     console.log(req.body)
     console.log(req.user)
+
     req.body.userId = req.user.userId;
+  
     db.Pet
       .create(req.body)
       .then(function (data) {
@@ -66,8 +72,9 @@ module.exports = function (app) {
       .update(req.body, {
         where: {
           id: req.params.id
-        }
-      })
+        // }, 
+        // include: [db.user]
+      }})
       .then(function (data) {
         res.json(data)
       })

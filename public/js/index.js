@@ -36,7 +36,9 @@ $(document).ready(function () {
     //   }
     // })
     $(".form").on("submit", function (event) {
+
         event.preventDefault();
+       
         console.log("sub")
         serviceDog = serviceDog.val();
 
@@ -59,12 +61,14 @@ $(document).ready(function () {
             location: location.val(),
             description: description.val()
             
+            
+            
         };
 
         $
             .post("/api/pets", newPetObj)
             .then(function (response) {
-                // console.log(response)
+                console.log(response)
 
                 //need to add thank you page///
                 // $.get("/thankyou", function (data) {
@@ -113,7 +117,7 @@ $(document).ready(function () {
             ownerName: ownerName.val(),
             email: email.val(),
             serviceQualification: serviceDogApp,
-            description: descriptionApp.val(),
+            description: descriptionApp.val()
             
             // jobId: jobTitleId
         };
