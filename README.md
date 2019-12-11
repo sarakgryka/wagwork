@@ -14,11 +14,11 @@ WagWork is an website that allows users to hire dogs it also lets people specify
     *Node
 ## Heroku Deployment:
     The app is deployed using Heroku on the following link.
-[Heroku](https://wagwork.herokuapp.com/)
+[Heroku](https://wagwork2.herokuapp.com/)
 ## Github Link:
 [GitHub](https://github.com/eirlyse/moaningmyrtles)
 ## Contributors:
-    Sarah Gryka, Geremy Pelleran, Eirlyse Sollars, and Tyler Thompson
+    Sara Gryka, Geremy Pelleran, Eirlyse Sollars, and Tyler Thompson
 ## License:
     MIT © WagWork 
 
