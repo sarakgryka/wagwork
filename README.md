@@ -15,6 +15,9 @@ WagWork is an website that allows users to hire dogs it also lets people specify
 ## Heroku Deployment:
     The app is deployed using Heroku on the following link.
 [Heroku](https://wagwork2.herokuapp.com/)
+Test login:
+username: test@test.com
+password: test
 ## Github Link:
 [GitHub](https://github.com/eirlyse/moaningmyrtles)
 ## Contributors:
